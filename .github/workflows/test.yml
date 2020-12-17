@@ -27,4 +27,8 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
       - name: Run PyVista
-        run: python -c "import pyvista;pyvista.Sphere().plot()"
+        run: python -c "import pyvista;pyvista.Sphere().plot(screenshot='sphere.png')"
+      - uses: actions/upload-artifact@v2
+        with:
+          name: screenshot
+          path: sphere.png
