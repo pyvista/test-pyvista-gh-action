@@ -20,4 +20,4 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
       - name: Run PyVista
-        run: python -c "import pyvista;pyvista.sphere().plot()"
+        run: python -c "import pyvista;pyvista.Sphere().plot()"
