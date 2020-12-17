@@ -1,3 +1,9 @@
+name: "PyVista Plotting"
+on:
+  push:
+    branches:
+      - '*'
+
 jobs:
   test:
     name: Test PyVista Plotting
