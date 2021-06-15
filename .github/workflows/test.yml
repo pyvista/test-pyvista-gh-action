@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     name: Test PyVista Plotting
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     env:
       DISPLAY: ':99.0'
       PYVISTA_OFF_SCREEN: 'True'
